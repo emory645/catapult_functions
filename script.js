@@ -9,10 +9,16 @@ let button = document.querySelector(".password-check");
 button.addEventListener("click", function() {
 
     let password = document.querySelector(".password-input").value;
+    function checkPassword(passwordCheck){
+        if(passwordCheck === "password123"){
+                return false;
+        }
 
+    }
     // 2 - Call your function here, store the result in a variable
     // and use the variable to determine which message to display
-    if () {
+    let onepasswordCheck = document.checkPassword(password);
+    if (onepasswordCheck) {
         document.querySelector(".yes").style = "display:block";
         document.querySelector(".denied").style = "display:none";
     } else {
